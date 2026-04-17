@@ -1,0 +1,14 @@
+# Editable install of this package
+-e .
+
+# Robot + vision
+pycozmo>=0.8.0
+opencv-python>=4.8
+numpy>=1.23
+pynput>=1.7.6
+pygame>=2.5.0
+huggingface_hub>=0.20
+
+# LeRobot + SmolVLA: install from a local clone (see README), e.g.:
+#   git clone https://github.com/huggingface/lerobot.git
+#   cd lerobot && pip install -e ".[smolvla]"

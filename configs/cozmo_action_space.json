@@ -1,0 +1,24 @@
+{
+  "description": "Continuous actions for Cozmo (PyCozmo). Stored in datasets normalized to [-1, 1]; deploy applies physical scaling.",
+  "action_dim": 4,
+  "action_names": ["left_wheel", "right_wheel", "lift_vel", "head_vel"],
+  "state_dim": 8,
+  "state_names": [
+    "lift_ratio",
+    "head_angle_norm",
+    "left_wheel_norm",
+    "right_wheel_norm",
+    "pose_yaw_norm",
+    "accel_z_norm",
+    "padding_0",
+    "cliff_or_picked_up"
+  ],
+  "image_key": "observation.images.front",
+  "image_shape_hwc": [240, 320, 3],
+  "fps": 30,
+  "limits": {
+    "max_wheel_speed_mmps": 200.0,
+    "lift_vel_rad_s_max": 1.0,
+    "head_vel_rad_s_max": 1.0
+  }
+}

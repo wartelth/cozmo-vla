@@ -1,0 +1,24 @@
+# Cozmo VLA — GPU training (Python 3.12 + pip; LeRobot 0.5.x requires >=3.12), aligned with CUDASetup/dl-gpu.yml.
+# That file pins torch==2.9.1+cu126; use requirements-gpu-torch.txt for the same wheels.
+#
+# Windows (recommended path if you already use CUDASetup):
+#   conda activate dl-gpu
+#   pip install -e .
+#   pip install -r requirements-gpu-torch.txt   # only if torch build differs
+#   cd lerobot && pip install -e ".[smolvla]"
+#
+# Fresh env:
+#   conda env create -f environment-gpu.yml
+#   conda activate cozmo-vla-gpu
+#   pip install -r requirements-gpu-torch.txt
+#   pip install -e .
+#   # clone lerobot, then: pip install -e ".[smolvla]"
+
+name: cozmo-vla-gpu
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip>=25
+  - setuptools
+  - wheel

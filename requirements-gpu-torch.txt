@@ -1,0 +1,7 @@
+# PyTorch CUDA wheels (matches CUDASetup/dl-gpu.yml: torch 2.9.1 + cu126).
+# Install after activating your conda env:
+#   pip install -r requirements-gpu-torch.txt
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.9.1+cu126
+torchvision==0.24.1+cu126
+torchaudio==2.9.1+cu126

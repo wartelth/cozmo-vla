@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cozmo-vla"
+version = "0.1.0"
+description = "PyCozmo data collection and SmolVLA deployment helpers for LeRobot"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "opencv-python>=4.8",
+  "pycozmo>=0.8.0",
+  "huggingface_hub>=0.20",
+  "pynput>=1.7.6",
+  "pygame>=2.5.0",
+]
+
+[project.optional-dependencies]
+lerobot = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

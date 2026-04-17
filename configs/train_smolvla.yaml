@@ -1,0 +1,14 @@
+# Example LeRobot train overrides (optional).
+# Prefer: python scripts/train_smolvla.py --dataset-repo-id USER/cozmo_v1
+# Or pass the same keys to: lerobot-train --policy.path=lerobot/smolvla_base ...
+
+policy:
+  path: lerobot/smolvla_base
+  device: cuda
+
+dataset:
+  repo_id: YOUR_HF_USER/cozmo_pickplace_v1
+
+batch_size: 32
+steps: 20000
+output_dir: outputs/train/cozmo_smolvla

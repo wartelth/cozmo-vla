@@ -1,0 +1,9 @@
+# Minimal deps for scripts/teleop_debug.py only (no LeRobot, no dataset recording).
+# Usage:
+#   pip install -r requirements-teleop.txt
+#   pip install -e . --no-deps
+
+numpy>=1.23
+pycozmo>=0.8.0
+pygame>=2.5.0
+pynput>=1.7.6

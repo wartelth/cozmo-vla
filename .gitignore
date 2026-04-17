@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+src/*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Project outputs (root only — do not ignore src/cozmo_vla/datasets/)
+outputs/
+/datasets/
+*.mp4
+*.png
+
+# IDE
+.idea/
+.vscode/
+
+# Local LeRobot clone (pip install -e ".[smolvla]" from here)
+lerobot/
