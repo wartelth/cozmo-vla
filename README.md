@@ -2,6 +2,8 @@
 
 End-to-end learning stack for collecting demonstrations on **Cozmo** with **PyCozmo**, storing them as a **LeRobot v3** dataset, fine-tuning **SmolVLA**, and running inference on the host PC.
 
+![Cozmo-VLA stack: teleop (collect_data.py) → LeRobot dataset → SmolVLA fine-tuning → deploy_real_time.py on Cozmo](assets/image.jpg)
+
 ## Prerequisites
 
 - **Python 3.12+** for the full stack (training/deploy with LeRobot 0.5.x; see [`lerobot/pyproject.toml`](lerobot/pyproject.toml)). The `cozmo-vla` package alone allows `>=3.10`, but **SmolVLA + `lerobot-train` need 3.12**.
